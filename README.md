@@ -4,6 +4,12 @@ tl;dr
 ```
 docker run --rm -it -v $HOME/Downloads:/data cjlyth/atom
 ```
+or 
+```
+docker run -it --name atom_build cjlyth/atom
+```
+
+
 
 or..
 

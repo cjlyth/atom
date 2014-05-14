@@ -12,5 +12,8 @@ RUN	apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -yq \
 ADD build-atom.sh /usr/local/bin/build-atom
 RUN chmod 755 /usr/local/bin/build-atom
 
+VOLUME ["/data"]
+WORKDIR /data
+
 CMD ["build-atom"]
 ENTRYPOINT ["/usr/bin/env"]
